@@ -1,0 +1,34 @@
+﻿<Window x:Class="РПМ1._09.Wnd_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:РПМ1._09"
+        mc:Ignorable="d"
+        Title="Wnd_1" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn_w1" Content="Результат" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="39" Width="208" Click="Button_Click" FontSize="14"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="648" Text="Дан номер некоторого года (положительное целое число). Вывести соответствующий ему номер столетия, учитывая, что, к примеру, началом 20 столетия был 1901 год." Height="71" FontSize="18"/>
+        <TextBox x:Name="Txt_w1" HorizontalAlignment="Center" Margin="0,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="35" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="Txt_result1" HorizontalAlignment="Center" Margin="0,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="35" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>
